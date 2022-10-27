@@ -10,4 +10,4 @@ Salida de `minikube status`
 
 Salida de `kubectl get nodes -o wide`
 
-![SingleList](./assets/image01.jpg)
+![SingleList](./assets/image02.jpg)
