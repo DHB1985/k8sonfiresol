@@ -2,7 +2,7 @@
 
 ## 1 - Archivo de definición del Pod.
 
-pod.yaml [README.md](./Challenge02/pod.yaml)
+[pod.yaml](./pod.yaml)
 
 ## 2 - Creación del Pod.
 
