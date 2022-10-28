@@ -2,6 +2,6 @@
 
 [Resolución Challenge 01](./Challenge01)
 
-[Resolución Challenge 02](./Challenge02/Challenge02.md)
+[Resolución Challenge 02](./Challenge02)
 
-[Resolución Challenge 03](./Challenge03/Challenge03.md)
+[Resolución Challenge 03](./Challenge03)
