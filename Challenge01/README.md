@@ -13,4 +13,4 @@ Salida de `kubectl get nodes -o wide`
 ![SingleList](./assets/image02.jpg)
 
 [Inicio](https://github.com/DHB1985/k8sonfiresol)
-[Inicio](../)
+[Inicio](../k8sonfiresol)
