@@ -5,3 +5,11 @@
 [Resolución Challenge 02](./Challenge02)
 
 [Resolución Challenge 03](./Challenge03)
+
+[Resolución Challenge 04](./Challenge04)
+
+[Resolución Challenge 05](./Challenge05)
+
+[Resolución Challenge 06](./Challenge06)
+
+[Resolución Challenge 07](./Challenge07)
