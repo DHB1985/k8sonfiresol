@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dep-ch06
+  labels:
+    app: app-ch06
+spec:
+  revisionHistoryLimit: 5
+  strategy:
+    type: RollingUpdate
+  replicas: 2
+  selector:
+    matchLabels:
+      app: app-ch06
+  template:
+    metadata:
+      labels:
+        app: app-ch06
+    spec:
+      containers:
+        - image: roxsross12/k8s_test_web:v1
+          name: contenedor-ch06
+          ports:
+            - name: http
+              containerPort: 80
