@@ -3,8 +3,11 @@ kind: Deployment
 metadata:
   name: consumer-deploy
   labels:
-    app: consumer-deploy
+    app: consumer
 spec:
+  revisionHistoryLimit: 2
+  strategy:
+    type: RollingUpdate
   replicas: 1
   selector:
     matchLabels:
@@ -15,8 +18,8 @@ spec:
         app: consumer
     spec:
       containers:
-        - name: contenedor-consumer
-          image: roxsross12/consumer:1.0.0
-          env:
-            - name: PYTHONUNBUFFERED
-              value: "1"
+      - image: roxsross12/consumer:1.0.0
+        name: contendor-consumer
+        env:
+          - name: PYTHONUNBUFFERED
+            value: "1"
