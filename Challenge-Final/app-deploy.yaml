@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-flask-deployment
+  labels:
+    app: app-flask-dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-flask
+  template:
+    metadata:
+      labels:
+        app: app-flask
+    spec:
+      containers:
+        - name: contenedor-flask
+          image: roxsross12/flask-app:1.0.0
+          ports:
+            - name: flask-server
+              containerPort: 8000
