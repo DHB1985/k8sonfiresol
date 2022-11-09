@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nodeserver
+  labels:
+    app: nodeserver
+    tier: backend
+spec:
+  type: NodePort
+  ports: 
+    - name: service-http
+      port: 80
+      targetPort: node-server
+  selector:
+    app: nodeserver
+    tier: backend

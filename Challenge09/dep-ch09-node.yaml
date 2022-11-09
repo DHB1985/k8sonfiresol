@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodeserver
+  labels:
+    app: nodeserver
+    tier: backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nodeserver
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: nodeserver
+        tier: backend
+    spec:
+      containers:
+        - name: contenedor-node
+          image: sdelements/lets-chat
+          ports:
+            - name: node-server
+              containerPort: 8080
+    

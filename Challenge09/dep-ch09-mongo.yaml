@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo
+  labels:
+    app: mongo
+    tier: database
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongo
+      tier: database
+  template:
+    metadata:
+      labels:
+        app: mongo
+        tier: database
+    spec:
+      containers:
+        - name: contenedor-mongo
+          image: mongo
+          ports:
+            - name: mongo-db
+              containerPort: 27017
