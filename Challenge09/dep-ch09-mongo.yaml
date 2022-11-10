@@ -18,8 +18,8 @@ spec:
         tier: database
     spec:
       containers:
-        - name: contenedor-mongo
-          image: mongo:latest
+        - name: mongo
+          image: mongo
           ports:
-            - name: mongo-db
+            - name: mongo
               containerPort: 27017

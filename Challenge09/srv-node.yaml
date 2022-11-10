@@ -1,16 +1,16 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nodeserver
+  name: letschat
   labels:
-    app: nodeserver
+    app: letschat
     tier: backend
 spec:
   type: NodePort
   ports: 
-    - name: service-http
+    - name: http
       port: 8080
-      targetPort: node-server
+      targetPort: http-server
   selector:
-    app: nodeserver
+    app: letschat
     tier: backend

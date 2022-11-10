@@ -1,26 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodeserver
+  name: letschat
   labels:
-    app: nodeserver
+    app: letschat
     tier: backend
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nodeserver
+      app: letschat
       tier: backend
   template:
     metadata:
       labels:
-        app: nodeserver
+        app: leyschat
         tier: backend
     spec:
       containers:
-        - name: contenedor-node
+        - name: letschat
           image: sdelements/lets-chat
           ports:
-            - name: node-server
+            - name: http-server
               containerPort: 8080
     
