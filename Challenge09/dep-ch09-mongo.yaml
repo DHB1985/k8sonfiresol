@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: contenedor-mongo
-          image: mongo
+          image: mongo:latest
           ports:
             - name: mongo-db
               containerPort: 27017
