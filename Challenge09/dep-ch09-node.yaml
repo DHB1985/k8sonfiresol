@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: letschat
-          image: sdelements/lets-chat
+          image: sdelements/lets-chat:latest
           ports:
             - name: http-server
               containerPort: 8080
