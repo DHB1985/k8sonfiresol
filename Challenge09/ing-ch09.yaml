@@ -4,7 +4,7 @@ metadata:
   name: ingress-letschat
 spec:
   rules:
-  - host: www.chat-tunombre.org
+  - host: www.chat-danielbarbieri.org
     http:
       paths:
       - path: /
@@ -13,4 +13,4 @@ spec:
           service:
             name: letschat
             port:
-              number: 80
+              number: 8080
