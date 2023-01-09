@@ -14,8 +14,8 @@
 
 [Resolución Challenge 07](./Challenge07)
 
-[Resolución Challenge 07](./Challenge08)
+[Resolución Challenge 08](./Challenge08)
 
-[Resolución Challenge 07](./Challenge09)
+[Resolución Challenge 09](./Challenge09)
 
-[Resolución Challenge 07](./Challenge-Final)
+[Resolución Challenge 10](./Challenge-Final)
